@@ -29,7 +29,7 @@ public class Baek11561 {
         while(left<=right){
             long mid = (left+right)/2;
 
-            if( mid > (2*n)/(mid+1)){
+            if( mid > (2*n)/(mid+1)){ // sum 의 값이 long 자료형 보다 커져 오버플로우가 생길 수도 있으니 미리 검사
                 right = mid -1;
                 continue;
             }
