@@ -1,4 +1,4 @@
-package com.sparta.club99.Baekjoon1072;
+package com.sparta.club99.day1;
 
 import java.util.Scanner;
 

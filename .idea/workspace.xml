@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8a8c62b7-1dcb-4eec-9c75-b033b25ee886" name="Changes" comment="init">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/club99/Baekjoon1072/Binary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/club99/Baekjoon1072/Math1072.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/club99/day2/Baek11561.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/club99/Baekjoon1072/Backjoon1072.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/club99/day1/Backjoon1072.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/club99/Baekjoon1072/Binary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/club99/day1/Binary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/club99/Baekjoon1072/Math1072.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/club99/day1/Math1072.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +26,12 @@
       <state>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="coding-test" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -66,6 +73,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.coding-test [:Baek11561.main()].executor": "Run",
     "Gradle.coding-test [:Binary.main()].executor": "Run",
     "Gradle.coding-test [:inputClass.main()].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -81,13 +89,26 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Binary">
-    <configuration name="Binary" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.sparta.club99.Baekjoon1072.Binary" />
+  <component name="RunManager" selected="Application.Baek11561">
+    <configuration name="Baek11561" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.sparta.club99.day2.Baek11561" />
       <module name="coding-test.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.sparta.club99.Baekjoon1072.*" />
+          <option name="PATTERN" value="com.sparta.club99.day2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Binary" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.sparta.club99.day1.Binary" />
+      <module name="coding-test.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sparta.club99.day1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -123,6 +144,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Baek11561" />
         <item itemvalue="Application.Binary" />
         <item itemvalue="Application.com.sparta.sortString.inputClass" />
         <item itemvalue="Application.inputClass" />
@@ -149,7 +171,8 @@
       <workItem from="1717545448718" duration="12000" />
       <workItem from="1717721329717" duration="2122000" />
       <workItem from="1717981275878" duration="26000" />
-      <workItem from="1730109488771" duration="1830000" />
+      <workItem from="1730109488771" duration="2307000" />
+      <workItem from="1730204963865" duration="2553000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
