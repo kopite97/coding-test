@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8a8c62b7-1dcb-4eec-9c75-b033b25ee886" name="Changes" comment="init">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/club99/day2/Baek11561.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/club99/day3/programmers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/club99/Baekjoon1072/Backjoon1072.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/club99/day1/Backjoon1072.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/club99/Baekjoon1072/Binary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/club99/day1/Binary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/club99/Baekjoon1072/Math1072.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/club99/day1/Math1072.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +73,7 @@
     "Gradle.coding-test [:Baek11561.main()].executor": "Run",
     "Gradle.coding-test [:Binary.main()].executor": "Run",
     "Gradle.coding-test [:inputClass.main()].executor": "Run",
+    "Gradle.coding-test [:programmers.main()].executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
@@ -89,7 +87,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Baek11561">
+  <component name="RunManager" selected="Application.programmers">
     <configuration name="Baek11561" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.sparta.club99.day2.Baek11561" />
       <module name="coding-test.main" />
@@ -142,8 +140,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="programmers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.sparta.club99.day3.programmers" />
+      <module name="coding-test.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sparta.club99.day3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.programmers" />
         <item itemvalue="Application.Baek11561" />
         <item itemvalue="Application.Binary" />
         <item itemvalue="Application.com.sparta.sortString.inputClass" />
@@ -172,7 +184,8 @@
       <workItem from="1717721329717" duration="2122000" />
       <workItem from="1717981275878" duration="26000" />
       <workItem from="1730109488771" duration="2307000" />
-      <workItem from="1730204963865" duration="2553000" />
+      <workItem from="1730204963865" duration="3605000" />
+      <workItem from="1730290430144" duration="3461000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
