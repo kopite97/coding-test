@@ -59,6 +59,7 @@ public class programmers {
             }
         }
 
+        System.out.println("answer : "+answer);
         return answer;
     }
 

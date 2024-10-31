@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8a8c62b7-1dcb-4eec-9c75-b033b25ee886" name="Changes" comment="init">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/club99/day3/programmers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/club99/day4/BaekDFS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/club99/day4/bonus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/club99/day3/programmers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/club99/day3/programmers.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,8 +74,9 @@
   "keyToString": {
     "Gradle.coding-test [:Baek11561.main()].executor": "Run",
     "Gradle.coding-test [:Binary.main()].executor": "Run",
+    "Gradle.coding-test [:bonus.main()].executor": "Run",
     "Gradle.coding-test [:inputClass.main()].executor": "Run",
-    "Gradle.coding-test [:programmers.main()].executor": "Debug",
+    "Gradle.coding-test [:programmers.main()].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
@@ -87,7 +90,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.programmers">
+  <component name="RunManager" selected="Application.bonus">
     <configuration name="Baek11561" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.sparta.club99.day2.Baek11561" />
       <module name="coding-test.main" />
@@ -114,12 +117,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.sparta.sortString.inputClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.sparta.sortString.inputClass" />
+    <configuration name="bonus" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.sparta.club99.day4.bonus" />
       <module name="coding-test.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.sparta.sortString.*" />
+          <option name="PATTERN" value="com.sparta.club99.day4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -127,12 +130,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="inputClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.sparta.pressKeypad.inputClass" />
+    <configuration name="com.sparta.sortString.inputClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.sparta.sortString.inputClass" />
       <module name="coding-test.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.sparta.pressKeypad.*" />
+          <option name="PATTERN" value="com.sparta.sortString.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -155,11 +158,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.bonus" />
         <item itemvalue="Application.programmers" />
         <item itemvalue="Application.Baek11561" />
         <item itemvalue="Application.Binary" />
         <item itemvalue="Application.com.sparta.sortString.inputClass" />
-        <item itemvalue="Application.inputClass" />
       </list>
     </recent_temporary>
   </component>
@@ -185,7 +188,8 @@
       <workItem from="1717981275878" duration="26000" />
       <workItem from="1730109488771" duration="2307000" />
       <workItem from="1730204963865" duration="3605000" />
-      <workItem from="1730290430144" duration="3461000" />
+      <workItem from="1730290430144" duration="4604000" />
+      <workItem from="1730374840281" duration="4544000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
