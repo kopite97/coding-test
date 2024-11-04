@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8a8c62b7-1dcb-4eec-9c75-b033b25ee886" name="Changes" comment="init">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/club99/day7/pragrammers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/club99/day8/baek.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,6 +87,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -192,7 +193,8 @@
       <workItem from="1730374840281" duration="6037000" />
       <workItem from="1730471745255" duration="1134000" />
       <workItem from="1730542872123" duration="5384000" />
-      <workItem from="1730644267367" duration="6378000" />
+      <workItem from="1730644267367" duration="7141000" />
+      <workItem from="1730732978117" duration="2241000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
