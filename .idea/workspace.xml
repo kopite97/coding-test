@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8a8c62b7-1dcb-4eec-9c75-b033b25ee886" name="Changes" comment="init">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/club99/day18/Sensor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/club99/day19/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/club99/day20/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/club99/day20/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/club99/day21/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/club99/day22/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,6 +78,7 @@
     &quot;Gradle.coding-test [:Daldidan.main()].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.coding-test [:Day16.main()].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.coding-test [:Madoka.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.coding-test [:Main.main()].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.coding-test [:Sensor.main()].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.coding-test [:bonus.main()].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.coding-test [:inputClass.main()].executor&quot;: &quot;Run&quot;,
@@ -97,7 +98,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Sensor">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Daldidan" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.sparta.club99.day17.Daldidan" />
       <module name="coding-test.main" />
@@ -137,6 +138,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.sparta.club99.day20.Main" />
+      <module name="coding-test.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sparta.club99.day20.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Sensor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.sparta.club99.day18.Sensor" />
       <module name="coding-test.main" />
@@ -150,26 +164,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="pragrammers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.sparta.club99.day7.pragrammers" />
-      <module name="coding-test.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.sparta.club99.day7.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Sensor" />
         <item itemvalue="Application.Daldidan" />
         <item itemvalue="Application.Day16" />
         <item itemvalue="Application.Madoka" />
-        <item itemvalue="Application.pragrammers" />
       </list>
     </recent_temporary>
   </component>
@@ -209,7 +210,9 @@
       <workItem from="1731544579221" duration="3312000" />
       <workItem from="1731602618333" duration="5474000" />
       <workItem from="1731690144458" duration="3321000" />
-      <workItem from="1731750344542" duration="1153000" />
+      <workItem from="1731750344542" duration="5317000" />
+      <workItem from="1731866968799" duration="2528000" />
+      <workItem from="1731962011559" duration="1989000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
