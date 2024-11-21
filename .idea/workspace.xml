@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8a8c62b7-1dcb-4eec-9c75-b033b25ee886" name="Changes" comment="init">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/club99/day24/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/club99/day25/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/club99/day23/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/club99/day23/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,7 +213,8 @@
       <workItem from="1731866968799" duration="2528000" />
       <workItem from="1731962011559" duration="2674000" />
       <workItem from="1732064417263" duration="1508000" />
-      <workItem from="1732150309259" duration="2040000" />
+      <workItem from="1732150309259" duration="2354000" />
+      <workItem from="1732219829196" duration="1805000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
