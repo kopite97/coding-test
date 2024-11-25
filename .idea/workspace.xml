@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8a8c62b7-1dcb-4eec-9c75-b033b25ee886" name="Changes" comment="init">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/club99/day25/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/club99/day26/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/club99/day27/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/club99/day28/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,26 +99,13 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Solution">
+  <component name="RunManager" selected="Application.com.sparta.club99.day28.Main">
     <configuration name="Daldidan" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.sparta.club99.day17.Daldidan" />
       <module name="coding-test.main" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.sparta.club99.day17.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Day16" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.sparta.club99.day16.Day16" />
-      <module name="coding-test.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.sparta.club99.day16.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -163,13 +152,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="com.sparta.club99.day28.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.sparta.club99.day28.Main" />
+      <module name="coding-test.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sparta.club99.day28.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.com.sparta.club99.day28.Main" />
         <item itemvalue="Application.Solution" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Sensor" />
         <item itemvalue="Application.Daldidan" />
-        <item itemvalue="Application.Day16" />
       </list>
     </recent_temporary>
   </component>
@@ -214,7 +216,9 @@
       <workItem from="1731962011559" duration="2674000" />
       <workItem from="1732064417263" duration="1508000" />
       <workItem from="1732150309259" duration="2354000" />
-      <workItem from="1732219829196" duration="1805000" />
+      <workItem from="1732219829196" duration="1997000" />
+      <workItem from="1732325244408" duration="874000" />
+      <workItem from="1732493603862" duration="1202000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
