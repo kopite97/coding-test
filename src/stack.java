@@ -1,61 +1,36 @@
-import java.util.Scanner;
-import java.util.Stack;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.ArrayDeque;
+import java.util.Deque;
 
 public class stack {
 
-    public static void main(String[] args) {
-        int numberCount = 0;
-        String push = "push";
-        String pop = "pop";
-        String size = "size";
-        String empty = "empty";
-        String top = "top";
+    public static void main(String[] args) throws Exception{
 
-        Scanner sc = new Scanner(System.in);
-        numberCount = sc.nextInt();
-        sc.nextLine();
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int n = Integer.parseInt(br.readLine().trim());
 
-        Stack<Integer> stack = new Stack<Integer>();
+        Deque<Integer> stack = new ArrayDeque<>();
+        StringBuilder out = new StringBuilder();
 
-        while (numberCount > 0) {
+        for (int i = 0; i < n; i++) {
+            String line = br.readLine().trim();
 
-            String order = sc.nextLine();
-
-
-            if (order.equals(top)) {
-                if (stack.isEmpty()) {
-                    System.out.println(-1);
-                    numberCount--;
-                    continue;
-                }
-                int topNumber = stack.peek();
-                System.out.println(topNumber);
-
-            } else if (order.equals(size)) {
-                int sizeNumber = stack.size();
-                System.out.println(sizeNumber);
-
-            } else if (order.equals(empty)) {
-                int isEmptyNumber = stack.isEmpty() ? 1 : 0;
-                System.out.println(isEmptyNumber);
-
-            } else if (order.equals(pop)) {
-                if (stack.isEmpty()) {
-                    System.out.println(-1);
-                    numberCount--;
-                    continue;
-                }
-                int popNumber = stack.pop();
-                System.out.println(popNumber);
-
-            } else if (order.substring(0,4).equals(push)) {
-                int number = Integer.parseInt(order.substring(5));
-                stack.push(number);
+            if (line.startsWith("push")) {
+                // "push X" 형태 -> X 파싱
+                int x = Integer.parseInt(line.substring(5).trim());
+                stack.push(x);
+            } else if ("pop".equals(line)) {
+                out.append(stack.isEmpty() ? -1 : stack.pop()).append('\n');
+            } else if ("size".equals(line)) {
+                out.append(stack.size()).append('\n');
+            } else if ("empty".equals(line)) {
+                out.append(stack.isEmpty() ? 1 : 0).append('\n');
+            } else if ("top".equals(line)) {
+                out.append(stack.isEmpty() ? -1 : stack.peek()).append('\n');
             }
-
-            numberCount--;
         }
 
-        sc.close();
+        System.out.print(out);
     }
 }
