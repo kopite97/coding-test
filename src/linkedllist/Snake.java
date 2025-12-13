@@ -16,14 +16,19 @@ public class Snake {
 
         int apple = Integer.parseInt(br.readLine().trim());
 
-        int[][] applePositions = new int[n][2];
+
+        /**
+         * 0 : 빈공간
+         * 1 : 사과
+         * 2: 뱀
+         */
+        int[][] board = new int[n+1][n+1];
 
         for (int i = 0; i < apple; i++) {
             StringTokenizer st = new StringTokenizer(br.readLine());
-            int x = Integer.parseInt(st.nextToken());
-            int y = Integer.parseInt(st.nextToken());
-            applePositions[i][0] = x;
-            applePositions[i][1] = y;
+            int r = Integer.parseInt(st.nextToken());
+            int c = Integer.parseInt(st.nextToken());
+            board[r][c] = 1;
         }
 
         int commandCount = Integer.parseInt(br.readLine().trim());
@@ -39,51 +44,52 @@ public class Snake {
         Deque<Hevi> snake = new ArrayDeque<>();
         snake.add(new Hevi(1, 1));
 
-        int[] vector = new int[2];
-        vector[0] = 1;
-        vector[1] = 0;
+        // 동 남 서 북
+        int[] dr = {0, 1, 0, -1}; // row 변화량
+        int[] dc = {1, 0, -1, 0}; // col 변화량
+        int currentDir = 0; // 초기 방향 (오른쪽)
 
-        boolean isNextCommand = true; // 명령어 큐에서 다음 command를 뽑을지
+        int time = 0;
+        int headR = 1, headC = 1;
+        board[1][1] = 2;
 
-        int currentSecond = 0;
-        int changeSecond = 0;
-        char direction;
         while(true){
-            currentSecond++;
-            // 다음 명령 뽑을지
-            if(isNextCommand){
-                // 명령이 남아 있다면
-                if (!commandQueue.isEmpty()) {
-                    Command newCommand = commandQueue.poll();
-                    isNextCommand = false;
-                    changeSecond = newCommand.second;
-                    direction = newCommand.direction;
+            time ++;
+
+            // 1. 다음 머리 위치 계산
+            int nr = headR + dr[currentDir];
+            int nc = headC + dc[currentDir];
+
+            // 2. 종료 조건 (벽 충돌 or 자기 자신)
+            if (nr < 1 || nc < 1 || nr > n || nc > n || board[nr][nc] == 2) {
+                break;
+            }
+
+            // 3. 뱀 머리 이동
+            if (board[nr][nc] == 0) {
+                // 사과가 없다면
+                Hevi tail = snake.pollLast();
+                board[tail.x][tail.y] = 0;
+            }
+
+            // 머리 좌표 맵에 갱신
+            snake.addFirst(new Hevi(nr, nc));
+            board[nr][nc] = 2;
+            headR = nr;
+            headC = nc;
+
+            // 4.방향 전환 시간인지 확인
+            if (!commandQueue.isEmpty() && commandQueue.peek().second == time) {
+                Command cmd = commandQueue.poll();
+                if(cmd.direction == 'D'){
+                    currentDir = (currentDir + 1)  % 4;
+                } else {
+                    currentDir = (currentDir -1 + 4) % 4;
                 }
             }
-
-            // 특정 시간이 지났는지
-            if(currentSecond >= changeSecond){
-                // 지났으면 방향 전환
-
-                /**
-                 * (1,0) => 오른쪽
-                 * (0,1) => 아래
-                 * (-1,0) => 왼쪽
-                 * (0,-1) => 위쪽
-                 */
-
-
-                // 새 명령 뽑기
-                isNextCommand = true;
-            }
-
-            // 지나지 않았으면 진행 방향 그대로
-
-
-            // 게임 오버 체크
         }
 
-
+        System.out.println(time);
 
     }
 }
