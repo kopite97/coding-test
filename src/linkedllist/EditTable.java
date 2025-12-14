@@ -5,77 +5,93 @@ package linkedllist;
  */
 
 import java.util.*;
-import java.io.*;
 
 public class EditTable {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
 
         int n = 8;
         int k = 2;
         String[] cmd = {"D 2", "C", "U 3", "C", "D 4", "C", "U 2", "Z", "Z"};
-        String answer = solution(n, k, cmd);
-
-        System.out.println(answer);
-
+        System.out.println(solution(n, k, cmd));
     }
 
-    public static String solution(int n,int k , String[] cmd){
+    public static String solution(int n, int k, String[] cmd) {
 
+        int[] pre = new int[n];
+        int[] next = new int[n];
 
-        LinkedList<Integer> table = new LinkedList<>();
         for (int i = 0; i < n; i++) {
-            table.add(i);
+            pre[i] = i-1;
+            next[i] = i+1;
         }
+        next[n-1] = -1;
 
-        Stack<Integer> undoTable = new Stack<>();
-        ListIterator<Integer> iter = table.listIterator(k);
+        Stack<Integer> deleted = new Stack<>();
 
-        int currentIndex = k;
-
-        for (int i = 0; i < cmd.length; i++) {
-            StringTokenizer st = new StringTokenizer(cmd[i]);
-
-            char c = st.nextToken().charAt(0);
+        for(String command : cmd) {
+            char c = command.charAt(0);
 
             if (c == 'U') {
-                int x = Integer.parseInt(st.nextToken());
-
-                for (int j = 0; j < x ; j++) {
-                    if (iter.hasPrevious()) {
-                        currentIndex = iter.previous();
-                    }
+                int x = Integer.parseInt(command.substring(2));
+                while (x-- > 0) {
+                    k = pre[k];
                 }
-
             } else if (c == 'D') {
-                int x = Integer.parseInt(st.nextToken());
-
-                for (int j = 0; j < x ; j++) {
-                    if (iter.hasNext()) {
-                        currentIndex = iter.next();
-                    }
+                int x = Integer.parseInt(command.substring(2));
+                while (x-- > 0) {
+                    k = next[k];
                 }
-
             } else if (c == 'C') {
 
-                int removeIndex = currentIndex;
-                iter.remove();
-                if (iter.hasPrevious()) {
-                    currentIndex = iter.previous();
+                // k의 이전 노드와 다음 노드 확인
+                int prev = pre[k];
+                int nxt = next[k];
+
+                // 1. 이전 노드(prev)의 '다음'을 k의 '다음'으로 연결
+                if (prev != -1) { // 맨 첫 노드가 아니라면
+                    next[prev] = nxt;
                 }
 
+                // 2. 다음 노드(nxt)의 '이전'을 k의 '이전'으로 연결
+                if (nxt != -1) { // 맨 끝 노드가 아니라면
+                    pre[nxt] = prev;
+                }
 
-            } else { // c == 'Z'
+                // 3. 삭제된 노드(k)를 스택에 저장 (복구를 위해)
+                deleted.push(k);
 
-                int undoIndex = undoTable.pop();
-                table.add(undoIndex, undoIndex);
+                // 4. 커서(k)이동 처리
+                if (nxt != -1) {
+                    k = nxt;
+                } else {
+                    k = prev;
+                }
 
+            } else if (c == 'Z') {
+                int restore = deleted.pop();
+
+                // 연결 복구 (배열 값 수정)
+                int prev = pre[restore];
+                int nxt = next[restore];
+
+                // 1. 이전 노드 복구
+                if (prev != -1) {
+                    next[prev] = restore;
+                }
+                // 2. 다음 노드 복구
+                if (nxt != -1) {
+                    pre[nxt] = restore;
+                }
             }
         }
 
         StringBuilder sb = new StringBuilder();
+        sb.append("O".repeat(n));
 
+        while (!deleted.isEmpty()) {
+            sb.setCharAt(deleted.pop(), 'X');
+        }
 
-        return null;
+        return sb.toString();
     }
-
 }
