@@ -24,7 +24,7 @@ public class CantorSet {
                 arr[i] = '-';
             }
 
-            dfs(size/3,size);
+            dfs(0,size);
             for (char var : arr) {
                 sb.append(var);
             }
@@ -38,15 +38,15 @@ public class CantorSet {
         if (size == 1) {
             return;
         }
-        int s = size/3;
+        int newSize = size/3;
 
-        for (int i = start; i < start+s; i++) {
+        for (int i = start + newSize; i < start + 2 * newSize; i++) {
             arr[i] = ' ';
         }
 
-        // 왼쪽으로 보내기
-        dfs(start - (s / 3) * 2, s);
-        dfs(start + s + s / 3, s);
+        // 왼쪽 구간 호출
+        dfs(start, newSize);
+        dfs(start + 2 + newSize, newSize);
 
 
     }
