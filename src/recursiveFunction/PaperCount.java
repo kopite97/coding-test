@@ -35,48 +35,33 @@ public class PaperCount {
     }
 
     static void dfs(int x, int y, int n) {
-        if (n == 1) {
-            int m = arr[x][y];
-            if (m == -1) {
-                result[0] +=1;
-            } else if (m == 0) {
-                result[1] +=1;
-            } else if (m == 1) {
-                result[2] +=1;
-            }
-
+        // 1. 현재 구역이 모두 같은 숫자인지 검사
+        if (checkIsSame(x, y, n)) {
+            int num = arr[x][y];
+            result[num+1]++;
             return;
         }
 
-        int num = arr[x][y];
-
-        boolean isSame = true;
-        for (int i = x; i < x+n; i++) {
-            for (int j = y; j < y+n; j++) {
-                if(num != arr[i][j]) {
-                    isSame = false;
-                    break;
-                }
+        // 2. 같지 않다면 9등분 하여 재귀 호출
+        int newSize = n/3;
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                dfs(x+(i*newSize),y+(j*newSize),newSize);
             }
         }
 
-        if (!isSame) {
-            int newSize = n/3;
-            for (int i = 0; i < 3; i++) {
-                for (int j = 0; j < 3; j++) {
-                    dfs(x + i * newSize, y + j * newSize, newSize);
+
+    }
+
+    static boolean checkIsSame(int x, int y, int n) {
+        int standard = arr[x][y];
+        for (int i = x; i < x + n; i++) {
+            for (int j = y; j < y + n; j++) {
+                if(arr[i][j] != standard) {
+                    return false;
                 }
             }
-            return;
         }
-
-        if (num == -1) {
-            result[0] +=1;
-        } else if (num == 0) {
-            result[1] +=1;
-        } else if (num == 1) {
-            result[2] +=1;
-        }
-
+        return true;
     }
 }
