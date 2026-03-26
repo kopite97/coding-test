@@ -8,7 +8,7 @@ public class MinHeap_Implement {
     public static void main(String[] args) throws IOException {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-
+        StringBuilder sb = new StringBuilder();
         int n = Integer.parseInt(br.readLine());
 
         heap = new int[n + 1];
@@ -19,15 +19,16 @@ public class MinHeap_Implement {
 
             if (num == 0) {
                 if (size < 1) {
-                    System.out.println(0);
+                    sb.append(0).append("\n");
                     continue;
                 }
-                System.out.println(poll());
+                sb.append(poll()).append("\n");
             } else {
                 add(num);
             }
         }
 
+        System.out.println(sb);
     }
 
     static int poll() {
